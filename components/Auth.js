@@ -30,6 +30,9 @@ const Auth = () => {
                     ref={passwordInp}
                     type="password"
                     placeholder="Password"
+                    onKeyPress={(e) => {
+                        if(e.key === "Enter") sendMsg();
+                    }}
                 />
             </div>
             <button onClick={() => signInUser()} className={styles.signInBtn}>Sign In</button>
