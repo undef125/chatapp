@@ -1,0 +1,37 @@
+.messageRight{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    align-items: center;
+    gap: .5rem;
+}
+.messageLeft{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 10rem;
+    gap: .5rem;
+}
+
+.messageRight > p,.messageLeft > p{
+    background: rgb(84, 213, 218);
+    padding: .5rem;
+    display: flex;
+    flex-wrap: wrap;
+    user-select: none;
+    border-radius: 10px;
+}
+.messageLeft > p{
+    background: #C0D8C0;
+}
+
+.messageRight > img,.messageLeft > img{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    
+}

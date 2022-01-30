@@ -1,0 +1,68 @@
+.signUpSec{
+    width: 25rem;
+    margin: 20vh auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ccdaee;
+    height: 50vh;
+    border-radius: 10px;
+    position: relative;
+}
+
+.emailHolder,.passwordHolder{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 1.2rem auto;
+}
+.signUpSec input{
+    outline: none;
+    border: 0px;
+    width: 70%;
+    background: inherit;
+    border-bottom: 1.6px solid rgb(24, 212, 212);
+    font-family: 'Montserrat',sans-serif;
+    font-size: 1.1rem;
+}
+.signUpSec input::placeholder{
+    font-family: 'Montserrat',sans-serif;
+    color: rgb(56, 54, 54);
+    font-size: .9rem;
+}
+.signUpSec input:focus{
+    border-bottom: 1.6px solid rgb(6, 156, 156);
+}
+
+.signInBtn{
+    margin-top: 2rem;
+    width: 10rem;
+    height: 1.8rem;
+    background: #1572a194;
+    outline: none;
+    border: 1px solid black;
+    font-size: 1.1rem;
+    font-family: 'montserrat', sans-serif;
+    cursor: pointer;
+    transition: box-shadow .3s ease;
+}
+.signInBtn:hover{
+    box-shadow: 0px 3px 4px 0px #32333394;
+
+}
+.lastP{
+    width: 80%;
+    position: absolute;
+    bottom: 0;
+}
+
+@media screen and (max-width: 600px) {
+    .signUpSec{
+        width: 20rem;
+        height: 23rem;
+        margin: 17vh auto;
+    }
+    .signInBtn:hover{
+        box-shadow: 0px;
+    }
+}

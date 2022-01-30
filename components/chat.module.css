@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+.chatPage {
+    background: #1572a1;
+}
+
+.headHolder {
+    width: 100%;
+    background: rgba(95, 158, 160, 0.555);
+    padding: .4rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.headHolder img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+}
+.navIconBtn {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.navIconBtn > button {
+    width: 6rem;
+    height: 1.8rem;
+    background: #c52f8694;
+    outline: none;
+    border: 1px solid black;
+    font-size: 1.1rem;
+    font-family: "montserrat", sans-serif;
+    cursor: pointer;
+    transition: color 0.4s ease;
+    color: rgb(240, 240, 240);
+}
+.navIconBtn > button:hover {
+    color: black;
+}
+.chatBoxHolder {
+    width: 30rem;
+    height: 35rem;
+    margin: 2rem auto;
+    border-radius: 10px;
+}
+.top {
+    background: #b6c1d1;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;;
+    padding: .2rem;
+    border-radius: 10px 10px 0px 0px;
+}
+.messages {
+    background: #D6E5FA;
+    height: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    padding: 0.5rem;
+    font-family: "Quicksand", sans-serif;
+}
+.title{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.sendMsg {
+    background: rgb(170, 205, 214);
+    border-radius: 0px 0px 10px 10px;
+    padding: .3rem 0rem;
+    display: flex;
+    justify-content: space-around;
+}
+.sendMsg > input{
+    outline: none;
+    border: 0px;
+    width: 75%;
+    height: 2rem;
+    background: rgba(0, 0, 0, 0.116);
+    /* border-bottom: 1.6px solid rgb(0, 0, 0); */
+    font-family: 'Montserrat',sans-serif;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    padding: .4rem;
+}
+.sendMsg > img{
+    width: 2.7rem;
+    height: 2rem;
+    transition: filter .3s ease;
+    cursor: pointer;
+}
+.sendMsg > img:hover{
+    filter: drop-shadow(1px 1px 2px black);
+}
+
+@media screen and (max-width: 600px) {
+    .chatBoxHolder{
+        width: 23rem;
+    }
+}
