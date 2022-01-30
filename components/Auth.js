@@ -31,7 +31,7 @@ const Auth = () => {
                     type="password"
                     placeholder="Password"
                     onKeyPress={(e) => {
-                        if(e.key === "Enter") sendMsg();
+                        if(e.key === "Enter") signInUser();
                     }}
                 />
             </div>
