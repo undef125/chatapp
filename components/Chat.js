@@ -15,11 +15,13 @@ const Chat = (props) => {
 
     //set profile img
     let profile;
-    props.user.email.split("@")[0] === "user1"
-        ? (profile =
-              "https://www.kindpng.com/picc/m/105-1055656_account-user-profile-avatar-avatar-user-profile-icon.png")
-        : (profile =
-              "https://www.kindpng.com/picc/m/495-4952535_create-digital-profile-icon-blue-user-profile-icon.png");
+    if(props.user.email.split("@")[0] === "user1") {
+        profile = "https://www.kindpng.com/picc/m/105-1055656_account-user-profile-avatar-avatar-user-profile-icon.png"
+    } else if(props.user.email.split("@")[0] === "user2") {
+        profile = "https://www.kindpng.com/picc/m/495-4952535_create-digital-profile-icon-blue-user-profile-icon.png"
+    } else {
+        profile = "https://image.shutterstock.com/image-vector/unknown-person-icon-anonymous-pictogram-260nw-1391394830.jpg"
+    }
 
     //************************************************ */
     const msgRef = useRef(null);

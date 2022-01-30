@@ -26,12 +26,18 @@
     background: #C0D8C0;
 }
 
-.messageRight > img,.messageLeft > img{
+.messageRight img,.messageLeft img{
     width: 2rem;
     height: 2rem;
     border-radius: 100%;
 }
+.imgHolder{
+    position: relative;
+}
 
-@media screen and (max-width: 600px) {
-    
+.userName{
+    position: absolute;
+    top: 1.85rem;
+    left: .18rem;
+    font-size: .8rem;
 }
