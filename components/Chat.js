@@ -66,6 +66,10 @@ const Chat = (props) => {
         dummyForScroll.current?.scrollIntoView({ behaviour: "smooth" });
     };
 
+    const signOutUser = () => {
+        auth.signOut();
+    }
+
 
     return (
         <div className={style.chatPage}>
