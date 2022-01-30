@@ -8,9 +8,7 @@ const Messages = ({ message, user }) => {
         if (message.user !== user) {
             alert("Can't Delete Other's Message!!");
         } else {
-            await deleteDoc(doc(db, "messages", message.id)).then((res) =>
-                console.log(res)
-            );
+            await deleteDoc(doc(db, "messages", message.id));
         }
     };
 

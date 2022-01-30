@@ -103,9 +103,7 @@ const Chat = (props) => {
                         type="text"
                         ref={msgRef}
                         onKeyPress={(e) => {
-                            e.key === "Enter"
-                                ? sendMsg()
-                                : console.log("nothing");
+                            if(e.key === "Enter") sendMsg();
                         }}
                     />
                     <img src="./send.png" onClick={() => sendMsg()} />
